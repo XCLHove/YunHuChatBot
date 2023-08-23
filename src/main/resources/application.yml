@@ -1,0 +1,5 @@
+server.port: ${yunhuchat.port}
+
+spring:
+  main.banner-mode: off
+  profiles.include: yunhuchat

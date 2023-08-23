@@ -1,0 +1,15 @@
+yunhuchat:
+  # 云湖消息订阅接口地址：http://ipAddress:port/event/token，此处的ip地址必须使用公网ip，不能使用127.0.0.1或localhost
+  # 如：               http://114.114.114.114:8080/event/114514
+  # 端口
+  port: 8080
+  # WebHook和Websocket地址都会用到token
+  token: 114514
+  # 云湖机器人WebHook 从云湖机器人配置页面获取
+  webHookUrl: https://chat-go.jwzhd.com/open-apis/v1/bot/send?token=xxxxxxxxxxxxxxxxxxxxxxx
+  # Websocket地址，用于接收MC服务器消息并转发到云湖群聊
+  # 最终连接地址：ws://ipAddress:port/webSocketPath/token
+  # 如：        ws://127.0.0.1:8080/yunhuchat/114514
+  # Serein 中自带'ws://'只需填'ipAddress:port/webSocketPath/token'部分
+  # 如：                      127.0.0.1:8080/yunhuchat/114514
+  webSocketPath: yunhuchat
